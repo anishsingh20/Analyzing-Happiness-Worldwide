@@ -2,6 +2,8 @@
 
 ### DESCRIPTION
 
+
+What factors socio,economic,political etc makes people of a country happy. This project is all about finding the answer to the question.
 The World Happiness Report is a landmark survey of the state of global happiness.This reports review the state of happiness in the world today and show how the new science of happiness explains personal and national variations in happiness.
 
 
