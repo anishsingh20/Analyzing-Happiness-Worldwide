@@ -453,10 +453,17 @@
           <formatted-text>
             <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>This table contains the correlation coefficient values(&apos;r&apos;) between happiness scores and various other variables in the dataset.</run>
             <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10'>The quantity </run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10' italic='true'>r</run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10'>, called the </run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10' italic='true'>linear correlation coefficient</run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10'>, measures the strength and the direction of a linear relationship between two variables</run>
+            <run>Æ&#10;&#10;</run>
             <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>1) Positive values for r  &gt;  0.2 signifies that there is a positive relation between the happpiness scores and that variable i.e if that variable increses the happiness score increases too.</run>
             <run>Æ&#10;&#10;</run>
             <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>2) Negetive values r &lt;  -0.2 , signifes that there is a negetive relation between the happiness scores and that variable i.e if that variable increses the happiness score decreases.</run>
-            <run>Æ&#10;</run>
+            <run>Æ&#10;&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>￼</run>
           </formatted-text>
         </caption>
       </layout-options>
