@@ -197,10 +197,17 @@
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <layout dim-ordering='alphabetic' dim-percentage='0.33245' measure-ordering='alphabetic' measure-percentage='0.66755' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.313907' measure-ordering='alphabetic' measure-percentage='0.656954' parameter-percentage='0.0291391' show-structure='true' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Freedom' datatype='real' default-format='*0.597' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+        <members />
+      </column>
     </datasource>
   </datasources>
   <worksheets>
@@ -442,6 +449,16 @@
             <run bold='true' fontsize='18'>Correlation between Happiness Score and other Variables</run>
           </formatted-text>
         </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>This table contains the correlation coefficient values(&apos;r&apos;) between happiness scores and various other variables in the dataset.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>1) Positive values for r  &gt;  0.2 signifies that there is a positive relation between the happpiness scores and that variable i.e if that variable increses the happiness score increases too.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#555555' fontname='Tableau Light' fontsize='10'>2) Negetive values r &lt;  -0.2 , signifes that there is a negetive relation between the happiness scores and that variable i.e if that variable increses the happiness score decreases.</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </caption>
       </layout-options>
       <table>
         <view>
@@ -534,6 +551,26 @@
         <cols />
       </table>
       <simple-id uuid='{057F1540-10E4-4325-A91A-27F49B65A6D5}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{65DF9108-3D1C-4C89-B3AA-C3BD2808C066}' />
     </worksheet>
   </worksheets>
   <dashboards>
@@ -732,6 +769,37 @@
             <card type='marks' />
             <card type='measures' />
           </strip>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='283'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34B01174-C963-45DD-861A-56DB3F446295}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
         </edge>
         <edge name='top'>
           <strip size='2147483647'>
@@ -745,7 +813,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{34B01174-C963-45DD-861A-56DB3F446295}' />
+      <simple-id uuid='{EAF06EBC-E71D-4E37-B378-30D1081D0420}' />
     </window>
   </windows>
   <thumbnails>
@@ -3833,6 +3901,35 @@
       0BpJx48fB5xziHZ/5IyuvvpqIHhtGnUJqq5euQPlFhKKcjfqx1C9v+azcuVKwK0iqs7ipEb9
       EMqxpNXrxDASA3MAhmEYISXVOAAjXCh3o3p8rX5qGEbyYQ7AMAwjpPwfmAiVFe4GIAMAAAAA
       SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 6' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
     </thumbnail>
   </thumbnails>
 </workbook>
