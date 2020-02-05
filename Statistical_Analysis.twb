@@ -218,6 +218,10 @@
         <calculation class='tableau' formula='CORR([Generosity],[Social support])' />
       </column>
       <column aggregation='None' datatype='string' name='[Country or region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='None' caption='Generosity (bin) 2' datatype='integer' name='[Generosity (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-4' formula='[Generosity]' peg='0' size='0.0328' />
+      </column>
+      <column datatype='real' name='[Generosity]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
@@ -225,7 +229,7 @@
         <calculation class='bin' decimals='-2' formula='[Score]' peg='0' size='0.26' />
       </column>
       <column datatype='real' name='[Score]' role='measure' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.153285' measure-ordering='alphabetic' measure-percentage='0.804745' parameter-percentage='0.0419708' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.191606' measure-ordering='alphabetic' measure-percentage='0.766423' parameter-percentage='0.0419708' show-structure='true' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
@@ -335,6 +339,30 @@
         </show-full-range>
       </table>
       <simple-id uuid='{015E345B-A8A1-45A1-A13F-9EB02AC4BB21}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <show-full-range>
+          <column>[federated.11ieqoo0jxznnd1d6jce8145g6af].[Generosity (bin) 2]</column>
+          <column>[federated.11ieqoo0jxznnd1d6jce8145g6af].[Generosity (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E9C44A32-5DF3-4995-BDC5-AD86DB31896A}' />
     </worksheet>
     <worksheet name='Sheet 2'>
       <layout-options>
@@ -1209,7 +1237,7 @@
       </viewpoint>
       <simple-id uuid='{344394AD-609F-4EC5-8F60-CBF418F58E2D}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 7'>
+    <window class='worksheet' name='Sheet 7'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1351,6 +1379,36 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{EB7F3EE7-C9CC-430C-858B-A7D1B96DE72C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11ieqoo0jxznnd1d6jce8145g6af].[none:Generosity (bin) 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{79B5100D-C13E-4B51-B761-B51AC0877015}' />
     </window>
   </windows>
   <thumbnails>
@@ -2878,6 +2936,35 @@
       V1cHwzAcOVvMF3MAfmPbNmzb3rFfTdvqj8pvlWEYUFV1R95bZU7F7fdWOasjHA67Mpn+dYZh
       VM+R34nPsVgsVo/Cd0I2m0UgENiRCfXXGQOAiMin9vwQEBERbY4BQETkU/8fU7Gm6c1oEW0A
       AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 11' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='384' name='Sheet 2' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
